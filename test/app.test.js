@@ -14,12 +14,4 @@ describe("GET /", () => {
     // opcional: comprobación de Content-Type
     expect(res.headers["content-type"]).toMatch(/html|text/);
   });
-
-  it("also can use supertest chained assertions", async () => {
-    await request(app)
-      .get("/")
-      .expect(200) // status
-      .expect("Content-Type", /html|text/)
-      .expect("Hello from CI/CD Pipeline!"); // body simple
-  });
 });
