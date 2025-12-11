@@ -1,5 +1,5 @@
 const request = require("supertest");
-const app = require("../API/index");
+const app = require("../index");
 
 describe("GET /", () => {
   it("should return success message", async () => {
